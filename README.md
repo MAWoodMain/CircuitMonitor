@@ -15,6 +15,7 @@ These cards will measure the power of two mains circuits and make the data acces
 1. The mains side of the board shall also be potted to improve the isolation and prevent electrocution from contact with line level conductors.
 
 ### Back plane
+![Monitor card digram](https://raw.githubusercontent.com/MAWoodMain/CircuitMonitor/master/Diagrams/Back%20Plane.png)
 #### Purpose
 The back plane will allow a number of monitor cards to be accessed by a SBC for processing and presentation.
 #### Requirements
