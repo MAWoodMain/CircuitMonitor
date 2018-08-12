@@ -1,4 +1,4 @@
-update=12/08/2018 14:20:31
+update=12/08/2018 18:53:03
 version=1
 last_client=kicad
 [pcbnew]
@@ -204,3 +204,4 @@ LibName172=D:/Dropbox/kicad-lib/digikey-kicad-library-master/digikey-symbols/dk_
 LibName173=D:/Dropbox/kicad-lib/digikey-kicad-library-master/digikey-symbols/dk_TVS-Diodes
 LibName174=D:/Dropbox/kicad-lib/digikey-kicad-library-master/digikey-symbols/dk_TVS-Mixed-Technology
 LibName175=D:/Dropbox/kicad-lib/digikey-kicad-library-master/digikey-symbols/dk_USB-DVI-HDMI-Connectors
+LibName176=HCPL-181-00DE
