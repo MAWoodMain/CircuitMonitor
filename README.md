@@ -4,6 +4,7 @@ A fully integrated system to monitor power consumption on a circuit by circuit b
 ## The Plan
 The system will consist of 2 parts, the power monitor cards and the back plane.
 ### Monitor card
+![Monitor card digram](https://raw.githubusercontent.com/MAWoodMain/CircuitMonitor/master/Diagrams/Measurement%20Card.png)
 #### Purpose
 These cards will measure the power of two mains circuits and make the data accessible to the system.
 #### Requirements
