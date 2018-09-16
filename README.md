@@ -2,24 +2,8 @@
 A fully integrated system to monitor power consumption on a circuit by circuit basis.
 
 ## The Plan
-The system will consist of 2 parts, the power monitor cards and the back plane.
-### Monitor card
-![Monitor card digram](https://i.imgur.com/zHFMSNq.png)
-#### Purpose
-These cards will measure the power of two mains circuits and make the data accessible to the system.
-#### Requirements
-1. Each monitor card will intercept 2 circuits exiting the consumer unit and will sense the voltage and current of the channels (voltage only from the first circuit). 
-1. This data will be communicated to a microcontroller on the other side of the board (isolated with an isolation slot and opto couplers).
-1. The microcontroller will then make the data accessible over CAN bus on a card edge connector which will be attached to the back plane. 
-1. These cards will have dip switches for unique id programming and will be powered over the card edge as they are optically isolated from the mains side of the board. 
-1. The mains side of the board shall also be potted to improve the isolation and prevent electrocution from contact with line level conductors.
+The system will consist of two board, a mains board and a analog front end (AFE).
 
-### Back plane
-![Monitor card digram](https://i.imgur.com/yIlvhcc.png)
-#### Purpose
-The back plane will allow a number of monitor cards to be accessed by a SBC for processing and presentation.
-#### Requirements
-1. Provide power to the safe side of the monitor cards ideally isolated from the mains.
-1. Maintain a properly terminated CAN bus for card to SBC comms.
-1. Provide a CAN bus peripheral for SBCs that do not feature one (e.g. RPI).
-1. Offer mechanical mounting for the cards to ensure they cannot fall out
+The mains board shall perform two roles, it will generate a 5V supply to power the second board and the RPI it sits on and it will step down and isolate the mains voltage for voltage sensing.
+
+The AFE will measure 12 current channels and one voltage channel. The current channels will be monitored with either Rogowski coils or current sense transformers, this will ensure galvanic isolation.
